@@ -29,8 +29,7 @@ d = st.number_input(" Diameter: ", min_value=0)
 st.info(
     "**AT: 0, CI: 1, Concrete: 2, DI: 3, Fiberglass: 4, HDPE: 5, PVC: 6, Steel: 7, Clay: 8**")
 
-sel_col, disp_col= st.beta_columns(2)
-m = sel_col.slider('Material: ', min_value=0, max_value=8, value=6, step=1)
+m = st.number_input(" Material: ", min_value=0)
 
 suba = st.text_input(" SubArea: ")
 mapsc = st.text_input(" MapscoGrid reference: ")
